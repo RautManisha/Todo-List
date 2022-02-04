@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./js_file.js" defer></script>
+    <title>Task Manager</title>
+</head>
+<body>
+    <header class="header" id="home">
+        <nav class="nav container">
+            <h1 class="logo">Task Manager</h1>
+            <ul class="nav-items">
+                <li class="nav-item"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="#todo">Todo</a></li>
+                <li class="nav-item"><a href="#signup">Signup</a></li>
+            </ul>
+        </nav>
+        <div class="headline">
+            <h2>Manage Your Tasks</h2>
+            <button class="btn btn-headline">Learn More</button>
+        </div>
+    </header>
+
+    <section class="section-todo container" id="todo">
+        <h2>Your plan for today?</h2>
+        <form class="todo-form">
+            <input type="text" class="todo-input" placeholder="Add Todo">
+            <button class="btn btn-todo-add">Add Todo</button>
+        </form>
+        <ul class="todo-list">
+            <li>
+                <span class="text">Add to your list</span>
+                <div class="todo-buttons">
+                    <button class="btn todo-btn done">Done</button>
+                    <button class="btn todo-btn remove">Remove</button>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="section-signup container" id="signup">
+        <h2>Sign Up</h2>
+        <form class="signup-form">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" name="confirmPassword" id="confirmPassword" />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="text" name="phone" id="phone" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="form-group">
+            <label for="about">About Yourself</label>
+            <textarea name="about" id="about" cols="30" rows="10"></textarea>
+          </div>
+          <button type="submit" class="btn signup-btn">Submit</button>
+        </form>
+      </section>
+</body>
+</html>
